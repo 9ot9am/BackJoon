@@ -410,12 +410,13 @@
 
 
 //#5
-    int[] numbers = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
-    
-    int sum = 0;
-    int average = 0;
-    int cnt = 0;
-    int lecture = 0;
+    // int[] numbers = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+    //
+    // int sum = 0;
+    // int average = 0;
+    // int cnt = 0;
+    // int lecture = 0;
+
     //합계는구할수있고
     //평균은 카운트세서 과목수 나누면 되는데
     //각각의 숫자는 어떻게 구하지????
@@ -432,5 +433,296 @@
     // int result = (sum/cnt)
     //     
     
+//
+    // string[] front = Console.ReadLine().Split();
+    //
+    // string a = "";
+    // bool isascending = true;
+    // bool isdescending = true;
+    //
+    // for (int i = 0; i < front.Length; i++)
+    // {
+    //     
+    //     if (front[i] == (i+1).ToString())
+    //     {
+    //         a = "ascending";
+    //         isascending = true;
+    //     }
+    //     
+    //     else if (front[i] != (i+1).ToString())
+    //     {
+    //         isascending = false;
+    //         break;
+    //     }
+    // }
+    //
+    // if (a == "ascending")
+    // {
+    //     Console.WriteLine("ascending");
+    // }
+    //
+    // for (int i = 8; i>=1; i--)
+    // {
+    //            
+    //     if (front[8-i] == i.ToString())
+    //     {
+    //         a = "descending";
+    //     }
+    //     
+    //     if (front[8-i] != i.ToString())
+    //     {
+    //         isdescending = false;
+    //         break;
+    //     }
+    //            
+    // }
+    //
+    // if (a == "descending")
+    // {
+    //     Console.WriteLine("descending");
+    // }
+    //
+    // else
+    // {
+    //     Console.WriteLine("mixed");
+    // }
+    
+    
+    // 실습 01
+    //
+    // int[] input = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+    // int a = input[0];
+    // int b = input[1];
+    // int c = a;
+    //
+    // for (int i = 0; i < b-1; i++)
+    // {
+    //     a *= c;
+    // }
+    // Console.WriteLine(a);
+    //
+    
+    //실습 02 •10개의 임의의 정수 중에서, 가장 큰 수를 출력해보기
+    // •ex)
+    // 20, 49, 3710, 15,22, 1, 29, 2920, 109, 307
+    // -> 3710
+
+    // int[] arr = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+    // int max = 0;
+    //
+    // foreach (var s in arr)
+    // {
+    //     if (max < s)
+    //     {
+    //         max = s;
+    //     }
+    // }
+    // Console.WriteLine(max);
+
+    //실습04 •1부터 9까지 정수 중, 임의의 정수 하나에 해당하는 구구단을 전부 출력해보기
+    
+    // int a = int.Parse(Console.ReadLine());
+    // int result = 0;
+    // for (int i = 0; i < 9; i++)
+    // {
+    //     result = a * (i + 1);
+    //     Console.WriteLine($"{a}x{i+1}={result}");
+    // }
+    
+    //실습05 •1부터 임의의 정수까지의 합을 출력해보기
+    // •ex)
+    // 7
+    // -> 1 + 2 + 3 + 4 + 5 + 6 + 7
+    // -> 28
+    // int n = int.Parse(Console.ReadLine());
+    // int sum = 0;
+    // for (int i = 0; i < n; i++)
+    // {
+    //     sum += i + 1;
+    // }
+    // Console.WriteLine(sum);
+
+    //실습05-2 •두 개의 임의의 정수 사이에 있는 모든 정수(두 수 포함)를 출력해보기
+    // •ex)
+    // 10, 15
+    // -> •10, 11, 12, 13, 14, 15
+
+    //임의이 정수 차가 5고 그 n번 만큼 실행시키기 
+    //10에 n번 만큼 +1 하기
+
+    // int[] arr = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+    // int a = arr[0];
+    // int b = arr[1];
+    // int c = b - a;
+    // int numbers = 0;
+    // int[] num = new int[c];
+    // for (int i = 0; i < c; i++)
+    // {
+    //     num[i] = a +(i + 1);
+    // }
+
+    
+    
+    // string str = "";
+    // for (int i = 0; i < 5; i++)
+    // {
+    //     str += "*";
+    //     Console.WriteLine(str);
+    // }
+    
+    //3개일 떄의 케이스를 먼저 생각해보고 짜보기
+    // 잘게 쪼개서 생각해보기
+    //머리속에서 디버깅이 가능해야함 
+    
+    //한 덩어리로 생각하지 말고, 디버깅 한 후 , 그 부분만 수정하면 됨
+    
+    //내가 이해할 수 있는 단위로 // 한 번에 처리할 수 있는 단위로 문제를 쪼개기
+    //디버깅
+    //한국어로 논리를 작성하고 // 그 다음에 c# 으로 번역 // 그러고 디버깅
+    
+    //2920
+    //하나라도 틀리면 어센딩이 아님
+    //반대로 하는 게 편함 
+
+    //등차등비수열
+    
+    //2920번
+    //1부터 8까지 차례대로 오름차순이면 ascending
+    //8부터 1까지 차례대로 내림차순이면 descending
+    //둘 다 아니면 mixed
+    
+    //bool isascending 을 둬서 
+    // 오름차순이 아닐 때 isascending을 false; break;
+    //오름차순 비교는 for문으로 비교하기
+    //출력은 true일 때 ascending 출력
+
+
+    //
+    // int[] asc = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+    //
+    // bool isAscending = true;
+    // bool isDescending = true;
+    //
+    // for (int i = 0; i < 8; i++)
+    // {
+    //     if (asc[i] != i + 1)
+    //     {
+    //         isAscending = false;
+    //         break;
+    //     }
+    // }
+    // //내림차순일 때 ...
+    // for (int i = 0; i < 8; i++)
+    // {
+    //     if (asc[i] != 8- i)
+    //     {
+    //         isDescending = false;
+    //         break;
+    //     }
+    // }
+    // if (isAscending)
+    // {
+    //     Console.WriteLine("ascending");
+    // }
+    // else if (isDescending)
+    // {
+    //     Console.WriteLine("descending");
+    // }
+    // else
+    // {
+    //     Console.WriteLine("mixed");
+    // }
+    //
+    //풀이2
+
+    //count 변수를 둬서 count의 숫자가 배열의 길이와 같을 때 
+
+    // int[] arr = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+    // int ascendingCount = 0;
+    // int descendingCount = 0;
+    //
+    //
+    // for (int i = 0; i < 8; i++)
+    // {
+    //
+    //     if (arr[i] == i+1)
+    //     {
+    //         ascendingCount++;
+    //     }
+    //     
+    // }
+    //
+    // for (int i = 0; i < 8; i++)
+    // {
+    //     if (arr[i] == 8 - i)
+    //     {
+    //         descendingCount++;
+    //     }
+    // }
+    //
+    // if (ascendingCount == arr.Length)
+    // {
+    //     Console.WriteLine("ascending");
+    // }
+    //
+    // else if (descendingCount == arr.Length)
+    // {
+    //     Console.WriteLine("descending");
+    // }
+    //
+    // else
+    // {
+    //     Console.WriteLine("mixed");
+    // }
+    //
+    
+    //숫자 5개 입력받아서 전부 짝수면 true, 하나라도 홀수면 false출력하기
+    // int[] numbers = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+    // bool num = true;
+    // for (int i = 0; i < numbers.Length; i++)
+    // {
+    //     if (numbers[i] % 2 != 0)
+    //     {
+    //         num = false;
+    //     }
+    // }
+    //
+    // if (num)
+    // {
+    //     Console.WriteLine("짝수");
+    // }
+    // else
+    // {
+    //     Console.WriteLine("false");
+    // }
+    
+    
+    int n = int.Parse(Console.ReadLine());
+    
+    //공백을 하나 더 만들어서 하나씩 줄이자
+    //공백4 3 2 1 0 + "*" 더하기
    
-     
+    //공백 개수외 별의 개수를 세어서 더해주기
+    
+
+    for (int i = 0; i < n; i++)
+    {
+        int spaceCount = n - i - 1; // 4 3 2 1 0
+        int starCount = i + 1; // 1 2 3 4 5 
+
+        for (int j = 0; i < n; i++)
+        {
+            
+        }
+        
+        Console.WriteLine();
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    

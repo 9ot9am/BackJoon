@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C", "C\C.csproj", "{6370FB59-3D2C-412C-8643-AADBFA5CC909}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp2", "ConsoleApp2\ConsoleApp2.csproj", "{15E5CAB0-EB6D-420B-8556-E9760B9C5298}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,11 @@ Global
 		{6370FB59-3D2C-412C-8643-AADBFA5CC909}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6370FB59-3D2C-412C-8643-AADBFA5CC909}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6370FB59-3D2C-412C-8643-AADBFA5CC909}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15E5CAB0-EB6D-420B-8556-E9760B9C5298}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15E5CAB0-EB6D-420B-8556-E9760B9C5298}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15E5CAB0-EB6D-420B-8556-E9760B9C5298}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15E5CAB0-EB6D-420B-8556-E9760B9C5298}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
 EndGlobal

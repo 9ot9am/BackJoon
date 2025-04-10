@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\C#\\C\\C\\C.csproj": {}
+    "C:\\backjoon\\BackJoon\\C\\C\\C.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\C#\\C\\C\\C.csproj": {
+    "C:\\backjoon\\BackJoon\\C\\C\\C.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\C#\\C\\C\\C.csproj",
+        "projectUniqueName": "C:\\backjoon\\BackJoon\\C\\C\\C.csproj",
         "projectName": "C",
-        "projectPath": "C:\\Users\\User\\Desktop\\C#\\C\\C\\C.csproj",
+        "projectPath": "C:\\backjoon\\BackJoon\\C\\C\\C.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\C#\\C\\C\\obj\\",
+        "outputPath": "C:\\backjoon\\BackJoon\\C\\C\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
