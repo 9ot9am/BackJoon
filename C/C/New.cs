@@ -697,27 +697,7 @@
     // }
     
     
-    int n = int.Parse(Console.ReadLine());
-    
-    //공백을 하나 더 만들어서 하나씩 줄이자
-    //공백4 3 2 1 0 + "*" 더하기
-   
-    //공백 개수외 별의 개수를 세어서 더해주기
-    
 
-    for (int i = 0; i < n; i++)
-    {
-        int spaceCount = n - i - 1; // 4 3 2 1 0
-        int starCount = i + 1; // 1 2 3 4 5 
-
-        for (int j = 0; i < n; i++)
-        {
-            
-        }
-        
-        Console.WriteLine();
-    }
-    
     
     
     
