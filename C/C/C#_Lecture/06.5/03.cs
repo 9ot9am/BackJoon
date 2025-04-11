@@ -49,18 +49,35 @@
     //     {
     //         a *= b;
     //     }
+    //
+    //     
     // }
     
 
 
     //---------------------------------
-    int num = int.Parse(Console.ReadLine());
-    //임의의 정수가 2가 몇 번 곱해졌는지 확인하기
-    if (num / 2 < 0)
-    {
-        
-    }
+    // int num = int.Parse(Console.ReadLine());
+    // //임의의 정수가 2가 몇 번 곱해졌는지 확인하기
+    // if (num / 2 < 0)
+    // {
+    //     
+    // }
     
 
-    
-    
+    //-----------------------------
+    //1 3 7 15의 경계값을 limit로 설정해서
+    // 1은 2보다 작고 , 3은 4보다 작고, 7은 8보다 작음
+    //이걸 활용해서 
+
+    // int num = 5;
+    // int floorLimit = 2;
+    // for (int floor = 1; floor <= 10; ++floor, floorLimit *= 2)
+    // {
+    //     if (num < floorLimit)
+    //     {
+    //         Console.WriteLine(floor);
+    //         break;
+    //     }
+    // }
+
+    // ```C# ```
