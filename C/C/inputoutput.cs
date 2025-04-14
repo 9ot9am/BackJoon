@@ -1,6 +1,3 @@
-
-using System.ComponentModel.Design;
-using System.Text;
 // //변숙 값인 str을 console.ReadLine으로 입력 받기
 // string str = Console.ReadLine(); 
 // //string 변수 값인 numbers라는 이름의 문자열 배열에 str을 넣어주고 공백으로 쪼개주기
@@ -174,10 +171,6 @@ using System.Text;
 
 //시 분
 //요리하는데 필요한 시간 0<= hours <=1000
-
-using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices.JavaScript;
-using System.Runtime.Intrinsics.X86;
 
 // String str = Console.ReadLine();
 // string [] numbers = str.Split();
@@ -673,30 +666,7 @@ using System.Runtime.Intrinsics.X86;
 //각 테스트 케이스는 반복 횟수 R(1 ≤ R ≤ 8), 문자열 S가 공백으로 구분되어 주어진다.
 // S의 길이는 적어도 1이며, 20글자를 넘지 않는다. 
 
-// //테스트 케이스의 개수 t
-//  int t = int.Parse(Console.ReadLine());
-//  
-//  //이 과정을 t번 반복한다.
-//  for (int k = 0; k < t; k++)
-//  {
-//      string arr = Console.ReadLine();
-//      string[] str = arr.Split(" ");
-//      
-//      int r = int.Parse(str[0]);
-//      string sec_arr = str[1];
-//      
-//      string sum = "";
-//      
-//      for (int i = 0; i < sec_arr.Length; i++)
-//      {
-//          for (int j = 0; j < r; j++)
-//          {
-//              sum += sec_arr[i];
-//          }
-//      }
-//      
-//      Console.WriteLine(sum);
-//  }
+//테스트 케이스의 개수 t
 
 //r번 반복해 4 abc
 // i 3
