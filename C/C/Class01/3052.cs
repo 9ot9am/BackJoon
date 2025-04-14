@@ -53,30 +53,30 @@
 //    -------------------------------------
 
 using System.Data;
-using System.Text;
-    
-    using var reader = new StreamReader(Console.OpenStandardInput(), Encoding.Default, false, 65536);
-    using var writer = new StreamWriter(Console.OpenStandardOutput(), Encoding.Default, 65536);
-    
-    
-    int[] array = new int[42];
-     
-    for (int i = 0; i < 10; i++)
-    {
-        var n = int.Parse(reader.ReadLine());
-        var a = n % 42;
-        array[a]++;
-    }
-    
-    int count = 0;
-    foreach (int n in array)
-    {
-        if (n != 0)
-        {
-            count++;
-        }
-    }
-    writer.WriteLine(count);
+// using System.Text;
+//     
+//     using var reader = new StreamReader(Console.OpenStandardInput(), Encoding.Default, false, 65536);
+//     using var writer = new StreamWriter(Console.OpenStandardOutput(), Encoding.Default, 65536);
+//     
+//     
+//     int[] array = new int[42];
+//      
+//     for (int i = 0; i < 10; i++)
+//     {
+//         var n = int.Parse(reader.ReadLine());
+//         var a = n % 42;
+//         array[a]++;
+//     }
+//     
+//     int count = 0;
+//     foreach (int n in array)
+//     {
+//         if (n != 0)
+//         {
+//             count++;
+//         }
+//     }
+//     writer.WriteLine(count);
     //--------------------------------------
     
     //10개의 정수를 입력받아, 각각 5로 나눈 나머지를 구한다
@@ -99,6 +99,25 @@ using System.Text;
     //         diffCount++;
     // }
     // writer.WriteLine(diffCount);
-    //
+    //-------------------------------
+
+    int[] remainderArray = new int[42]; //0-41까지의 나머지를 저장할 공간
+
+    for (int i = 0; i < 10; i++)
+    {
+        int num = int.Parse(Console.ReadLine()); //숫자를 num에 입력
+        int remainder = num % 42; // 나머지값 저장
+        remainderArray[remainder]++; //해당 나머지의 인덱스를 증가시켜서 기록
+    }
+
+    int count = 0;
     
+    for (int i = 0; i < 42; i++)
+    {
+        if (remainderArray[i] != 0)
+        {
+            count++;
+        }
+    }
+    Console.WriteLine(count);
     
